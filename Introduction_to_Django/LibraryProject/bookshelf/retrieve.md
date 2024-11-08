@@ -1,5 +1,9 @@
-#retrieve
-#command
+# Retrieve Operation
+
+## Command:
+
+```python
 from bookshelf.models import Book
-book.title
-#output is Nineteen Eighty-four"
+
+# Retrieve the book by title
+book = Book.objects.get(title="1984")
