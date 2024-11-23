@@ -5,7 +5,7 @@ library_name = 'Library name'
 author_name = 'author name'
 specific_author = Author.objects.get(name=author_name)
 books_by_author = Book.objects.filter(author=specific_author)
-books_by_author = Author.objects.filter(author=specific_author)
+books_by_authors = Author.objects.filter(author='author')
 print("Books by Author:", books_by_author)
 
 
