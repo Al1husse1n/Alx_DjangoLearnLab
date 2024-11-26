@@ -1,6 +1,6 @@
 
 
-from .models import Author, Book, Library, Librarian
+from .models import Author, Book, Library,Librarian
 library_name = 'Library name'
 author_name = 'author name'
 author = 'author'
@@ -16,5 +16,7 @@ books_in_library = specific_library.books.all()
 print("Books in Library:", books_in_library)
 
 specific_library = Library.objects.get(name=library_name)
-librarian = specific_library.librarian
+librarian = specific_library.Librarian
+lib = "worke"
+specific_librarian = Librarian.objects.get(library= lib)
 print("Librarian for the Library:", librarian)
